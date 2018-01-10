@@ -15,7 +15,9 @@ function init() {
 			if (service.secure)
 				proto += "s"
 
-			tmp += '<li><a href="' + proto + '://' + server.address + ':' + service.port + '">' + service.name + "</a></li >";
+			var addr = proto + '://' + server.address + ':' + service.port;
+
+			tmp += '<li><a href="' + addr + '">' + service.name + '</a> <a target="_blank" href="' + addr + '">[&#8599;]</a></li >';
 		});
 		tmp += "</ul>"
 

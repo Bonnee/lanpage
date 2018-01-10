@@ -1,4 +1,6 @@
 # lanpage: a landing page
+Demo [here](https://bonnee.github.io/lanpage/)
+
 No frills (aka CSS) experience
 
 # Usage
