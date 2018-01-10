@@ -6,7 +6,7 @@ function init() {
 	list = document.getElementById("list")
 	title = document.getElementById("title")
 
-	title.innerHTML += info.serverName;
+	title.innerHTML += info.serverName + "<small>@" + info.location + "</small >";
 
 	info.services.forEach(function (element) {
 		list.innerHTML += '<li><a href="' + document.location.href + ':' + element.port + '">' + element.name + "</a ></li > ";

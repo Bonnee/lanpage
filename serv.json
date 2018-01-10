@@ -1,1 +1,1 @@
-data = '{"serverName": "Argo","services" :[{"name": "qBittorrent","port": "8080"},{"name":"Shinobi","port":"5050"}]}';
+data = '{"serverName": "Argo", "location":"Rack", "services" :[{"name": "qBittorrent","port": "8080"},{"name":"Shinobi","port":"5050"}]}';
