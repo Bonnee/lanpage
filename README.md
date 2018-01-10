@@ -1,5 +1,5 @@
 # lanpage: a landing page
-No frills experience
+No frills (aka CSS) experience
 
 # Usage
  1. download

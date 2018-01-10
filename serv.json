@@ -1,1 +1,0 @@
-data = '{"serverName": "Argo", "location":"Rack", "services" :[{"name": "qBittorrent","port": "8080"},{"name":"Shinobi","port":"5050"}]}';

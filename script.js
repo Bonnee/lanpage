@@ -6,9 +6,19 @@ function init() {
 	list = document.getElementById("list")
 	title = document.getElementById("title")
 
-	title.innerHTML += info.serverName + "<small>@" + info.location + "</small >";
+	var tmp = ""
+	info.forEach(function (server) {
+		tmp += "<li><h3>" + server.name + "</h3></li><ul>"
 
-	info.services.forEach(function (element) {
-		list.innerHTML += '<li><a href="' + document.location.href + ':' + element.port + '">' + element.name + "</a ></li > ";
+		server.services.forEach(function (service) {
+			var proto = "http"
+			if (service.secure)
+				proto += "s"
+
+			tmp += '<li><a href="' + proto + '://' + server.address + ':' + service.port + '">' + service.name + "</a></li >";
+		});
+		tmp += "</ul>"
+
 	});
+	list.innerHTML = tmp;
 }
